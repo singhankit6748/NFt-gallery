@@ -1,0 +1,97 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#connectWallet {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+#mintForm {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form textarea,
+form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button[type="submit"] {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#nftGallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nftCard {
+    background-color: hsl(0, 12%, 95%);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: calc(33.33% - 20px);
+}
+
+.nftCard img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

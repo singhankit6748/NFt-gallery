@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Gallery</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>NFT Gallery</h1>
+        <!-- Connect with MetaMask button -->
+        <button id="connectWallet">Connect with MetaMask</button>
+    </header>
+    
+    <main>
+        <!-- Mint NFT form -->
+        <section id="mintForm">
+            <h2>Mint Your NFT</h2>
+            <form id="mintNFT">
+                <label for="nftName">NFT Name:</label>
+                <input type="text" id="nftName" name="nftName" required>
+
+                <label for="nftDescription">Description:</label>
+                <textarea id="nftDescription" name="nftDescription" rows="4" required></textarea>
+
+                <label for="nftImage">Upload Image:</label>
+                <input type="file" id="nftImage" name="nftImage" accept="image/*" required>
+
+                <button type="submit">Mint NFT</button>
+            </form>
+        </section>
+
+        <!-- Display NFTs -->
+        <section id="nftGallery">
+            <h2>Your NFTs</h2>
+            <div class="nftCard">
+                <img src="./image/faceHome.png" alt="NFT Image">
+                <h3>NFT Title</h3>
+                <p>Description of the NFT.</p>
+            </div>
+            <!-- Repeat this card structure for each NFT -->
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 NFT Gallery</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
